@@ -12,6 +12,7 @@
 		0BB61F2A1E5FF9B500632791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BB61F281E5FF9B500632791 /* Main.storyboard */; };
 		0BB61F2C1E5FF9B500632791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BB61F2B1E5FF9B500632791 /* Assets.xcassets */; };
 		0BB61F2F1E5FF9B500632791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BB61F2D1E5FF9B500632791 /* LaunchScreen.storyboard */; };
+		C9CF6203F487AB36E1784C5C /* Pods_ParseChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63299F6DFDFE3B39FD36309E /* Pods_ParseChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0BB61F2B1E5FF9B500632791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BB61F2E1E5FF9B500632791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BB61F301E5FF9B500632791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EC073758890759AD3B320CD /* Pods-ParseChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseChat/Pods-ParseChat.release.xcconfig"; sourceTree = "<group>"; };
+		1E5FCB602A14A05220D0B415 /* Pods-ParseChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseChat/Pods-ParseChat.debug.xcconfig"; sourceTree = "<group>"; };
+		63299F6DFDFE3B39FD36309E /* Pods_ParseChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParseChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9CF6203F487AB36E1784C5C /* Pods_ParseChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0BB61F231E5FF9B500632791 /* ParseChat */,
 				0BB61F221E5FF9B500632791 /* Products */,
+				723787193EE6105E19836E19 /* Pods */,
+				64876601B6FDB65046CB10A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = ParseChat;
 			sourceTree = "<group>";
 		};
+		64876601B6FDB65046CB10A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63299F6DFDFE3B39FD36309E /* Pods_ParseChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		723787193EE6105E19836E19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E5FCB602A14A05220D0B415 /* Pods-ParseChat.debug.xcconfig */,
+				0EC073758890759AD3B320CD /* Pods-ParseChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0BB61F331E5FF9B500632791 /* Build configuration list for PBXNativeTarget "ParseChat" */;
 			buildPhases = (
+				F6739567FDF360CB78DA3933 /* [CP] Check Pods Manifest.lock */,
 				0BB61F1D1E5FF9B500632791 /* Sources */,
 				0BB61F1E1E5FF9B500632791 /* Frameworks */,
 				0BB61F1F1E5FF9B500632791 /* Resources */,
+				3487732020EC88405E2EBF2C /* [CP] Embed Pods Frameworks */,
+				44FCF1FCD67E4F0302E64127 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3487732020EC88405E2EBF2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseChat/Pods-ParseChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44FCF1FCD67E4F0302E64127 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseChat/Pods-ParseChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6739567FDF360CB78DA3933 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0BB61F1D1E5FF9B500632791 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		0BB61F341E5FF9B500632791 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E5FCB602A14A05220D0B415 /* Pods-ParseChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S6VP3UBBGK;
@@ -272,6 +348,7 @@
 		};
 		0BB61F351E5FF9B500632791 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EC073758890759AD3B320CD /* Pods-ParseChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S6VP3UBBGK;
